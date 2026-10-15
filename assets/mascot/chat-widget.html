@@ -1,0 +1,12 @@
+<button class="chat-launcher gadoal-launcher" id="chatToggle" type="button" aria-controls="chatPanel" aria-expanded="false" aria-label="가도알과 독서 대화 열기">
+  <span class="gadoal-bubble" id="mascotBubble" aria-hidden="true">다음 한 권, 같이 찾을까요?</span>
+  <span class="mascot-stage" aria-hidden="true"><span class="mascot-figure"><img class="mascot-image" src="assets/mascot/gadoal.png" alt="" width="1254" height="1254"><span class="mascot-page"></span><span class="mascot-spark spark-one">✦</span><span class="mascot-spark spark-two">✧</span></span><span class="mascot-ground"></span></span>
+  <span class="gadoal-name"><span class="gadoal-dot" aria-hidden="true"></span>양 사서 가도알 <span aria-hidden="true">↗</span></span>
+</button>
+<aside class="chat-panel gadoal-panel" id="chatPanel" aria-label="가도알 독서 챗봇" hidden>
+  <div class="chat-header"><img class="gadoal-avatar" src="assets/mascot/gadoal.png" alt="책을 든 양 사서 가도알" width="48" height="48"><div><strong>책을 되새김질하는 가도알</strong><small id="modelStatus">로컬 모델 연결 확인 중</small></div><button class="chat-close" id="chatClose" type="button" aria-label="챗봇 닫기">×</button></div>
+  <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions"><div class="message">메에~ 안녕, 나는 양 사서 가도알이에요. 📚<br>요즘 마음이 복잡한가요, 아니면 새로운 세계로 떠나고 싶은가요? 오늘의 기분부터 들려주세요.</div></div>
+  <div class="chat-suggestions"><button type="button" data-prompt="요즘 마음이 지쳐 있어. 위로가 되는 책을 함께 골라줘.">위로가 필요한 날</button><button type="button" data-prompt="새로운 세계에 몰입할 수 있는 소설을 추천해줘.">새로운 세계로</button><button type="button" data-prompt="짧은 이야기를 써보고 싶어. 먼저 소재부터 함께 정해볼까?">함께 이야기 쓰기</button></div>
+  <form class="chat-form" id="chatForm"><label class="visually-hidden" for="chatInput">가도알에게 질문</label><textarea id="chatInput" rows="1" maxlength="2000" placeholder="오늘의 기분이나 마음에 남은 책을 들려주세요." required></textarea><button id="chatSend" type="submit" aria-label="질문 보내기">↑</button></form>
+  <p class="chat-note">로컬 Qwen · 도서 정보 / 가도알의 해석 / 창작 예시를 구분해요.</p>
+</aside>
